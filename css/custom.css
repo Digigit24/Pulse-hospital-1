@@ -6890,3 +6890,42 @@ a{
                 font-size: 20px;
             }
         }
+
+
+/* index  */
+    :root{
+    --pulse-blue:#005b96;
+    --pulse-teal:#00a5b5;
+    --pulse-light:#e6f7ff;
+  }
+  .service-drawer .card{
+    border:none;
+    border-radius:14px;
+    overflow:hidden;
+    transition:.3s;
+    background:#fff;
+    box-shadow:0 4px 18px rgba(0,0,0,.06);
+  }
+  .service-drawer .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 26px rgba(0,0,0,.1);
+  }
+  .service-icon{
+    width:70px;
+    height:60px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    font-size:26px;
+    color:#fff;
+    background:var(--pulse-teal);
+    margin-bottom:12px;
+  }
+  .btn-pulse{
+    background:var(--pulse-blue);
+    color:#fff;
+  }
+  .btn-pulse:hover{
+    background:var(--pulse-teal);
+    color:#fff;
+  }
