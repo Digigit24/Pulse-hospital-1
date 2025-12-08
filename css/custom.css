@@ -6893,7 +6893,7 @@ a{
 
 
 /* index  */
-    :root{
+:root{
     --pulse-blue:#005b96;
     --pulse-teal:#00a5b5;
     --pulse-light:#e6f7ff;
@@ -6905,18 +6905,19 @@ a{
     transition:.3s;
     background:#fff;
     box-shadow:0 4px 18px rgba(0,0,0,.06);
+    padding: 4.00rem !important;   
   }
   .service-drawer .card:hover{
     transform:translateY(-4px);
     box-shadow:0 8px 26px rgba(0,0,0,.1);
   }
   .service-icon{
-    width:70px;
+    width:60px;
     height:60px;
     display:grid;
     place-items:center;
     border-radius:50%;
-    font-size:26px;
+    font-size:26px !important;
     color:#fff;
     background:var(--pulse-teal);
     margin-bottom:12px;
@@ -6929,3 +6930,22 @@ a{
     background:var(--pulse-teal);
     color:#fff;
   }
+
+
+
+
+.service-icon{
+  width: 72px;                         /* bigger icon circle */
+  height: 72px;
+  font-size: 34px;
+  margin-bottom: 16px;
+  margin-right: 30px;
+}
+.service-drawer .card h6{
+  font-size: 1.15rem !important;       /* title bigger */
+  margin-bottom: .5rem !important;
+}
+.service-drawer .card p{
+  font-size: 1.20rem !important;        /* description bigger */
+  line-height: 1.55;
+}
