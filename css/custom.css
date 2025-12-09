@@ -7411,7 +7411,7 @@ body>script:last-of-type {
 
 .service-number {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
     font-size: 2.5rem;
     font-weight: 800;
@@ -7759,3 +7759,40 @@ body>script:last-of-type {
         margin-top: 6px;
     }
 }
+
+
+/* doctor intro css */
+.our-team-slider-wrapper {
+    position: relative;
+    margin-top: 30px;
+}
+
+.our-team-slider .swiper-slide {
+    height: auto;
+}
+
+.our-team-slider .team-item {
+    height: 100%;
+}
+
+/* Optional: tweak arrows inside container */
+.our-team-slider .swiper-button-next,
+.our-team-slider .swiper-button-prev {
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(4px);
+}
+
+.our-team-slider .swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.our-team-slider .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
