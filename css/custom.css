@@ -2988,6 +2988,7 @@ header.main-header .header-sticky.active {
 
 .our-blog {
     padding: 100px 0 70px;
+    margin-bottom: 0px;
 }
 
 .post-item {
@@ -7403,6 +7404,30 @@ body>script:last-of-type {
     background-color: #f5f9ff;
 }
 
+.service-card {
+    position: relative;
+    overflow: hidden; /* so big numbers don't overflow */
+}
+
+.service-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    opacity: 0.08;              /* fade effect */
+    pointer-events: none;
+    user-select: none;
+}   
+
+/* Optional: slightly smaller on mobile */
+@media (max-width: 576px) {
+    .service-number {
+        font-size: 2rem;
+    }
+}
+
 .service-drawer h2{
     color: #005b96;
     font-weight: 700 !important;
@@ -7567,5 +7592,170 @@ body>script:last-of-type {
     .service-drawer .row.g-4>[class*="col-6"] {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+
+
+
+/* Trusted Hospital Facilities Section */
+.trusted-facilities {
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.trusted-facilities.dark-section {
+    background: radial-gradient(circle at top, #182437 0%, #050915 55%, #02030a 100%);
+    color: #ffffff;
+}
+
+.trusted-facilities .section-title h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #5ee0c5;
+    margin-bottom: 10px;
+}
+
+.trusted-facilities .section-title h2 {
+    font-size: 30px;
+    line-height: 1.35;
+}
+
+.trusted-facilities .section-title-content p {
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* Image */
+.trusted-facilities-image figure {
+    margin: 0;
+}
+
+.trusted-facilities-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* Facilities grid */
+.facilities-grid {
+    margin-top: 10px;
+}
+
+.facility-card {
+    display: flex;
+    gap: 14px;
+    padding: 14px 14px;
+    border-radius: 14px;
+    background: rgba(8, 13, 24, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    align-items: flex-start;
+    height: 100%;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.6);
+    border-color: rgba(94, 224, 197, 0.7);
+    background: rgba(9, 17, 34, 0.98);
+}
+
+/* Icon */
+.facility-icon {
+    flex: 0 0 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.facility-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Text */
+.facility-content h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.facility-content p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.82);
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .trusted-facilities {
+        padding: 60px 0;
+    }
+
+    .trusted-facilities .section-title h2 {
+        font-size: 26px;
+    }
+
+    .trusted-facilities-image {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .trusted-facilities-image img {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .trusted-facilities .section-title h2 {
+        font-size: 22px;
+    }
+
+    .facility-card {
+        padding: 12px 12px;
+        gap: 12px;
+    }
+
+    .facility-icon {
+        flex: 0 0 46px;
+        height: 46px;
+    }
+
+    .facility-content h3 {
+        font-size: 14px;
+    }
+
+    .facility-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .trusted-facilities {
+        padding: 50px 0;
+    }
+
+    .trusted-facilities-image img {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    .facilities-grid {
+        margin-top: 6px;
     }
 }
