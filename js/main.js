@@ -113,3 +113,6 @@ window.addEventListener("resize", () => {
   camera.updateProjectionMatrix();
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 });
+
+
+// doctor
