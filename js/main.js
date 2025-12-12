@@ -4,8 +4,6 @@ const reviews = [
   { author: "Ramesh T. – Ravet",  text: "I had a knee replacement done by Dr. Pravin Deshmukh from the orthopedics department. The recovery was smooth and faster than expected. Highly recommend Pulse!" },
   { author: "Meena R. – Hinjewadi", text: "Thanks to Dr. Sameer Kulkarni, our father recovered fully after a stroke. The ICU care was excellent and the nursing team was attentive 24x7." },
   { author: "Kunal P. – Tathawade", text: "Dr. Rutuja Mehta from dermatology explained my condition in simple terms and helped me get visible results within weeks. I’m so grateful." },
-  { author: "Rohit J. – Ravet", text: "Very satisfied with the services at Pulse Hospital. The doctors are highly experienced, the diagnostics are accurate, and the staff is well-trained and supportive. Clean facilities and quick response time. One of the most reliable hospitals in Tathawade." },
-  { author: "Suyog K. – Aundh", text: "I recently got discharged from pulse hospital and I’m very thankful for the excellent care I received. The doctors, nurses, and staff were professional, attentive, and supportive throughout my stay. The hospital also provides cashless insurance facility, which made the process hassle-free and smooth." }
 ];
 
 /* ===== INJECT CARDS ===== */
@@ -39,10 +37,6 @@ cards.forEach((card, i) => {
     }
   });
 });
-
-
-
-
 
 
 

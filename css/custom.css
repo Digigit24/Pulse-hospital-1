@@ -238,6 +238,7 @@ body {
     overflow: hidden;
     transition: all 0.4s ease-in-out;
     z-index: 1;
+    margin-left: 28px;
 }
 
 .btn-default:hover {
@@ -479,8 +480,9 @@ body {
 }
 
 .section-title p {
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
+    color: gray;
+    margin-left: 30px;
 }
 
 .bg-section.dark-section .section-title-content p,
@@ -3092,7 +3094,7 @@ body {
 .page-header {
     position: relative;
     padding: 260px 0 160px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .page-header:after {
@@ -3143,6 +3145,9 @@ body {
 .page-header-box ol .breadcrumb-item+.breadcrumb-item::before {
     color: var(--white-color);
 }
+
+/* extra css for header section */
+
 
 .our-approach {
     padding: 100px 0;
@@ -5181,6 +5186,7 @@ body {
 .error-page-content-body p,
 .error-page-content .section-title {
     margin-bottom: 20px;
+    text-align: center !important;  
 }
 
 /************************************/
@@ -7938,4 +7944,583 @@ body {
 
 .faq-ans {
     color: gray;
+}
+
+
+
+
+
+/* about us */
+
+
+/* ===== Vision & Mission Section Styles ===== */
+
+
+/* Vision Section */
+.vision-section {
+    padding: 120px 0;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.vision-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.vision-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.vision-number {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(74, 111, 255, 0.1);
+    line-height: 1;
+}
+
+.vision-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    background: rgba(74, 111, 255, 0.1);
+    border-radius: 50px;
+}
+
+.vision-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.vision-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.vision-pillars {
+    margin-bottom: 40px;
+}
+
+.vision-pillar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vision-pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(74, 111, 255, 0.15);
+    border-color: var(--primary-color);
+}
+
+.pillar-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), #4a6fff);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.vision-pillar:hover .pillar-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(74, 111, 255, 0.3);
+}
+
+.pillar-content h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+
+.pillar-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.pillar-hover-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.vision-pillar:hover .pillar-hover-effect {
+    left: 100%;
+}
+
+.vision-cta .btn-highlighted {
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.vision-cta .btn-highlighted i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.vision-cta .btn-highlighted:hover i {
+    transform: translateX(5px);
+}
+
+.vision-visual-wrapper {
+    position: relative;
+}
+
+.vision-visual {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: all 0.6s ease;
+}
+
+.vision-visual:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.visual-main img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.6s ease;
+}
+
+.vision-visual:hover .visual-main img {
+    transform: scale(1.05);
+}
+
+.visual-float-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.visual-stat {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.visual-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(74, 111, 255, 0.1) 0%, transparent 70%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* Mission Section */
+.mission-section {
+    padding: 120px 0;
+    position: relative;
+}
+
+.mission-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.mission-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.mission-number {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    line-height: 1;
+}
+
+.mission-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+}
+
+.mission-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.mission-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}
+
+.mission-goals {
+    margin-bottom: 40px;
+}
+
+.goal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.goal-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+}
+
+.goal-check {
+    color: var(--primary-color);
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.goal-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.goal-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mission-values {
+    margin-top: 40px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.value-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.value-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-box span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mission-visual-wrapper {
+    position: relative;
+}
+
+.mission-visual {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(5deg);
+    transition: all 0.6s ease;
+}
+
+.mission-visual:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.mission-visual .visual-main img {
+    height: 500px;
+}
+
+/* CTA Banner */
+.vm-cta-banner {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), #4a6fff);
+    position: relative;
+    overflow: hidden;
+}
+
+.vm-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.vm-cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.vm-cta-banner h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.vm-cta-banner p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.vm-cta-banner .btn-highlighted {
+    background: white;
+    color: var(--primary-color);
+    padding: 18px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid white;
+}
+
+.vm-cta-banner .btn-highlighted:hover {
+    background: transparent;
+    color: white;
+}
+
+.vm-cta-banner .btn-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vm-cta-banner .btn-large i {
+    transition: transform 0.3s ease;
+}
+
+.vm-cta-banner .btn-large:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .vision-title, .mission-title {
+        font-size: 36px;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .vm-hero-section {
+        padding: 80px 0 60px;
+    }
+    
+    .vision-section, .mission-section {
+        padding: 80px 0;
+    }
+    
+    .vision-title, .mission-title {
+        font-size: 32px;
+    }
+    
+    .vision-visual, .mission-visual {
+        transform: none;
+        margin-top: 40px;
+    }
+    
+    .vision-visual:hover, .mission-visual:hover {
+        transform: none;
+    }
+    
+    .visual-main img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vm-hero-section {
+        padding: 60px 0 40px;
+    }
+    
+    .vision-section, .mission-section {
+        padding: 60px 0;
+    }
+    
+    .vision-title, .mission-title {
+        font-size: 28px;
+    }
+    
+    .vision-description, .mission-description {
+        font-size: 16px;
+    }
+    
+    .vision-label, .mission-label {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .vision-number, .mission-number {
+        font-size: 48px;
+    }
+    
+    .vision-pillar, .goal-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .pillar-icon {
+        margin: 0 auto;
+    }
+    
+    .visual-float-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .visual-stat {
+        padding: 10px 15px;
+    }
+    
+    .stat-number {
+        font-size: 24px;
+    }
+    
+    .vm-cta-banner {
+        padding: 60px 0;
+    }
+    
+    .vm-cta-banner h3 {
+        font-size: 24px;
+    }
+    
+    .vm-cta-banner .btn-highlighted {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .visual-main img {
+        height: 300px;
+    }
+    
+    .vm-hero-subtitle {
+        font-size: 16px;
+    }
 }

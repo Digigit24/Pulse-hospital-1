@@ -377,7 +377,7 @@ sup {
 }
 
 a {
-    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    color: white;
     text-decoration: underline
 }
 
