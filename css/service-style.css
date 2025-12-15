@@ -587,7 +587,7 @@
 .section-header h2 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: #1a1a1a;
+    color: #0f3263;
 }
 
 .section-header p {
@@ -906,7 +906,7 @@
 .card-icon {
     width: 52px;
     height: 52px;
-    background: linear-gradient(135deg, #4a6fff, #6c8cff);
+    background: linear-gradient(135deg, #0f3263, #335688);
     border-radius: 10px;
     display: flex;
     align-items: center;
