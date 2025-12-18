@@ -37,72 +37,63 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
-      "@type": "IndividualPhysician",
-      "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#doctor",
-      "name": "Dr. Rajendra V. Chavan",
+      "@type": "Physician",
+      "@id": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html",
+      "name": "Dr. Tushar Pisal",
       "honorificPrefix": "Dr.",
-      "jobTitle": "General Surgeon",
-      "medicalSpecialty": [
-        "Surgical",
-        "GeneralSurgery",
-        "GastrointestinalSurgery",
-        "OncologicSurgery"
-      ],
-      "description": "Experienced general surgeon specializing in gastrointestinal surgery, laparoscopic procedures, and general surgical interventions at Pulse Hospital PCMC.",
-      "image": "https://www.pulsehospitalpcmc.com/images/doctors/dr-rajendra-chavan.jpg",
-      "url": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html",
+      "jobTitle": "Orthopedic Specialist",
+      "description": "Dr. Tushar Pisal is an experienced Orthopedic Specialist at Pulse Multispecialty Hospital in Tathawade, PCMC providing advanced orthopedic care including fracture management, joint pain treatment, sports injury care and rehabilitation.",
+      "image": "https://pulsehospitalpcmc.com/images/dr-tushar-pisal.jpg",
+      "url": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html",
       "telephone": "+91-88053-31414",
-            "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Pulse Hospital, S.No. 66/1 Tathawade Chowk, 	Aundh - Ravet BRTS Road",
-        "addressLocality": "Tathawade, Pimpri-Chinchwad",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411033",
-        "addressCountry": "IN"
-      },
       "affiliation": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "hospitalAffiliation": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
+        "@type": "Hospital",
+        "@id": "https://pulsehospitalpcmc.com/#hospital"
       },
       "knowsAbout": [
-        "Gastrointestinal Surgery",
-        "Laparoscopic Procedures",
-        "Emergency Surgery",
-        "Surgical Oncology",
-        "Minimally Invasive Surgery"
+        "Orthopedic Fracture Care",
+        "Joint Pain Management",
+        "Sports Injury Treatment",
+        "Rehabilitation Therapy",
+        "Minimally Invasive Orthopedic Procedures"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "appointments",
         "telephone": "+91-88053-31414",
-        "availableLanguage": ["English", "Hindi", "Marathi"]
+        "availableLanguage": [
+          "English",
+          "Hindi",
+          "Marathi"
+        ]
       },
-      "hasCredential": ["MBBS", "MS General Surgery"],
-      "yearsOfExperience": 16
-    },
-    {
-      "@type": "Hospital",
-      "@id": "https://www.pulsehospitalpcmc.com/#organization",
-      "name": "Pulse Hospital PCMC",
-      "url": "https://www.pulsehospitalpcmc.com/",
-      "description": "Advanced multi-specialty hospital in Pimpri-Chinchwad providing comprehensive surgical services and general surgery procedures.",
-      "logo": "https://www.pulsehospitalpcmc.com/assets/images/logo.png",
-      "image": "https://www.pulsehospitalpcmc.com/images/hospital-building.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "S.No. 66/1, Tathawade Chowk, Aundh - Ravet BRTS Road",
-        "addressLocality": "Tathawade, Pimpri-Chinchwad",
+        "addressLocality": "Pimpri-Chinchwad",
         "addressRegion": "Maharashtra",
         "postalCode": "411033",
         "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 18.6429,
-        "longitude": 73.7782
+      }
+    },
+
+    {
+      "@type": "Hospital",
+      "@id": "https://pulsehospitalpcmc.com/#hospital",
+      "name": "Pulse Multispecialty Hospital",
+      "url": "https://pulsehospitalpcmc.com/",
+      "logo": "https://pulsehospitalpcmc.com/images/logo.png",
+      "image": "https://pulsehospitalpcmc.com/images/hospital-building.jpg",
+      "description": "Pulse Multispecialty Hospital is a trusted 24×7 hospital in Tathawade, PCMC providing emergency, ICU, OPD, IPD care and multispecialty clinical services across departments like orthopedics, neurosurgery, urology and more.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "S.No. 66/1, Tathawade Chowk, Aundh - Ravet BRTS Road",
+        "addressLocality": "Pimpri-Chinchwad",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411033",
+        "addressCountry": "IN"
       },
       "contactPoint": {
         "@type": "ContactPoint",
@@ -110,190 +101,56 @@
         "contactType": "customer service",
         "areaServed": "IN"
       },
-      "medicalSpecialty": [
-        "Surgical",
-        "GeneralSurgery",
-        "Gastroenterology",
-        "Oncology",
-        "EmergencyMedicine"
-      ],
       "sameAs": [
-        "https://www.facebook.com/PulseHospitalPCMC/",
-        "https://www.instagram.com/pulsehospitalpcmc/"
+        "https://www.facebook.com/pulse_hospital_tathawade",
+        "https://www.instagram.com/pulse_hospital_tathawade",
+        "https://www.youtube.com/@Pulse_Multispeciality_Hospital"
       ]
     },
-    {
-      "@type": "MedicalService",
-      "name": "General Surgery Consultation",
-      "description": "Expert evaluation and surgical planning for various general surgical conditions requiring operative intervention.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "medicalSpecialty": "GeneralSurgery",
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html",
-        "servicePhone": "+91-88053-31414"
-      }
-    },
-    {
-      "@type": "MedicalProcedure",
-      "name": "Laparoscopic Surgery",
-      "description": "Minimally invasive surgical procedures using small incisions and camera-guided instruments for various abdominal conditions.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "bodyLocation": "Abdomen",
-      "procedureType": "MinimallyInvasiveProcedure",
-      "medicalSpecialty": "GeneralSurgery",
-      "followup": "Shorter recovery time with minimal postoperative care"
-    },
-    {
-      "@type": "MedicalProcedure",
-      "name": "Gastrointestinal Surgery",
-      "description": "Surgical procedures for gastrointestinal tract conditions including appendectomy, hernia repair, and bowel surgeries.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "bodyLocation": "Gastrointestinal Tract",
-      "procedureType": "SurgicalProcedure",
-      "medicalSpecialty": "GastrointestinalSurgery",
-      "followup": "Postoperative monitoring and dietary guidance"
-    },
-    {
-      "@type": "MedicalProcedure",
-      "name": "Emergency Surgery",
-      "description": "Urgent surgical interventions for acute conditions like appendicitis, trauma, intestinal obstruction, and surgical emergencies.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "bodyLocation": "Various",
-      "procedureType": "EmergencyProcedure",
-      "medicalSpecialty": "GeneralSurgery",
-      "followup": "Intensive postoperative care and monitoring"
-    },
-    {
-      "@type": "MedicalProcedure",
-      "name": "Hernia Repair Surgery",
-      "description": "Surgical correction of abdominal hernias using open or laparoscopic techniques to repair weakened abdominal wall.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "bodyLocation": "Abdominal Wall",
-      "procedureType": "SurgicalProcedure",
-      "medicalSpecialty": "GeneralSurgery"
-    },
-    {
-      "@type": "MedicalProcedure",
-      "name": "Surgical Oncology Procedures",
-      "description": "Cancer surgery including tumor resection, lymph node dissection, and palliative surgical interventions for cancer patients.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "bodyLocation": "Various organs",
-      "procedureType": "SurgicalProcedure",
-      "medicalSpecialty": "OncologicSurgery",
-      "followup": "Oncological follow-up and adjuvant therapy coordination"
-    },
-    {
-      "@type": "MedicalService",
-      "name": "Postoperative Care",
-      "description": "Comprehensive postoperative management including wound care, pain management, and recovery monitoring.",
-      "provider": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "serviceType": "Postoperative Care",
-      "medicalSpecialty": "GeneralSurgery"
-    },
+
     {
       "@type": "WebPage",
-      "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#webpage",
-      "headline": "Dr. Rajendra V. Chavan - General Surgeon | Pulse Hospital PCMC",
-      "description": "Profile of Dr. Rajendra V. Chavan, experienced general surgeon specializing in laparoscopic surgery, gastrointestinal procedures, and emergency surgical interventions.",
-      "url": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html",
+      "@id": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html#webpage",
+      "url": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html",
+      "name": "Dr. Tushar Pisal - Orthopedic Specialist | Pulse Multispecialty Hospital",
+      "description": "Profile of Dr. Tushar Pisal, Orthopedic Specialist at Pulse Multispecialty Hospital in Tathawade, PCMC offering expert care for fractures, joint pain, sports injuries and rehabilitation.",
       "mainEntity": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#doctor"
+        "@id": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html"
       },
-      "datePublished": "2023-03-25",
-      "dateModified": "2024-12-10",
       "publisher": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      },
-      "breadcrumb": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#breadcrumb"
+        "@id": "https://pulsehospitalpcmc.com/#hospital"
       }
     },
-    {
-      "@type": "Article",
-      "headline": "General Surgical Expertise of Dr. Rajendra V. Chavan",
-      "description": "Professional profile and surgical expertise of Dr. Rajendra V. Chavan in general and gastrointestinal surgery.",
-      "articleBody": "Dr. Rajendra V. Chavan is a skilled general surgeon with expertise in laparoscopic procedures, gastrointestinal surgery, emergency surgical interventions, and oncological surgeries. Committed to providing safe, effective surgical care with a focus on patient recovery and minimal invasiveness.",
-      "mainEntityOfPage": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#webpage"
-      },
-      "author": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#doctor"
-      },
-      "datePublished": "2023-03-25",
-      "dateModified": "2024-12-10",
-      "publisher": {
-        "@id": "https://www.pulsehospitalpcmc.com/#organization"
-      }
-    },
+
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#breadcrumb",
+      "@id": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.pulsehospitalpcmc.com/"
+          "item": "https://pulsehospitalpcmc.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Doctors",
-          "item": "https://www.pulsehospitalpcmc.com/doctors/"
+          "item": "https://pulsehospitalpcmc.com/team.html"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Dr. Rajendra V. Chavan",
-          "item": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html"
+          "name": "Dr. Tushar Pisal",
+          "item": "https://pulsehospitalpcmc.com/doctors/dr-tushar-pisal.html"
         }
       ]
-    },
-    {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "reviewCount": "45",
-      "bestRating": "5",
-      "worstRating": "1",
-      "itemReviewed": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#doctor"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Patient"
-      },
-      "datePublished": "2024-12-05",
-      "reviewBody": "Excellent laparoscopic surgery with minimal discomfort and quick recovery. Dr. Chavan explained everything thoroughly and provided excellent postoperative care.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "itemReviewed": {
-        "@id": "https://www.pulsehospitalpcmc.com/doctors/dr-rajendra-v-chavan.html#doctor"
-      }
     }
+
   ]
 }
 </script>
+
 </head>
 <body>
 
